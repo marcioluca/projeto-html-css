@@ -1,32 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Tektur:wght@400..900&display=swap");
+:root {
+    --color-primary: #3E5879;
+    --color-secondary: #213555;
+    --color-tertiary: #D8C4B6;
+    --color-main: #F5EFE7;
+    --font-primary: "Tektur", sans-serif;
+    --font-secondary: "Sarabun", sans-serif;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-primary);
 }
 /* Cabeçalho */
 header {
- background-color: #47cf7b;
- color: #fff;
+ background-color: var(--color-primary);
+ color: var(--color-main);
  padding: 15px;
  text-align: center;
- border-bottom: 3px solid #0f642f;
+ font-size: 1.5rem;
+ border-bottom: 3px solid var(--color-secondary);
 }
 /* Grid de produtos */
 .container {
-    background-color: #fcfbfb;
+    background-color: var(--color-main);
     min-height: 60vh;
     padding: 50px;
+    display: flex;
 }
 .products-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 .card {
-    width: 31%;
+    width: 30%;
     display: inline-block;
     margin: 1% 1%;
-    padding: 15px;
+    /* padding: 15px; */
+    gap: 15px;
 }
 .product-image{
     height: 300px;
@@ -34,6 +46,10 @@ header {
     margin-bottom: 10px;
     background-position: center;
     background-size: cover;
+}
+.product-description {
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
 }
 #img-1 {
     background-image: url("../IMG/relogio.jpeg");
@@ -64,8 +80,8 @@ header {
 }
 h3 {
     margin-bottom:  10px;
-    color: #47cf7b;
-    border-left: 5px solid #0f642f;
+    color: var(--color-primary);
+    border-left: 5px solid var(--color-secondary);
     padding-left:  7px;
     font-size: 23px;
 }
@@ -74,6 +90,7 @@ h3 {
 }
 .bold {
      font-weight: bold;
+     font-size: 28px;
 }
 .btn {
     display: block;
@@ -81,20 +98,27 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #3db36b;
-    color: #fff;
+    font-size: larger;
+    background-color: var(--color-primary);
+    color: var(--color-main);
     padding: 15px;
     border-radius: 5px;
     transition: .5s;
 }
 .btn:hover{
-    background-color: #0f642f;
+    background-color: var(--color-secondary);
 }
 /* footer */
 footer{
-    background-color: #47cf7b;
-    color: #fff;
-    border-top: 3px solid #0f642f;
+    background-color: var(--color-primary);
+    color: var(--color-main);
+    border-top: 3px solid var(--color-secondary);
     text-align: center;
-    padding: 80px;
+    padding: 60px;
 }
+.rodape__texto {
+    font-size: 2.0rem;
+    font-family: var(--font-secondary);
+    font-weight: 900;
+}
+
