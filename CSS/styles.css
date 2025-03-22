@@ -28,6 +28,7 @@ header {
     min-height: 60vh;
     padding: 50px;
     display: flex;
+    flex-wrap: wrap;
 }
 .products-container {
     max-width: 1200px;
@@ -37,7 +38,6 @@ header {
     width: 30%;
     display: inline-block;
     margin: 1% 1%;
-    /* padding: 15px; */
     gap: 15px;
 }
 .product-image{
@@ -122,3 +122,34 @@ footer{
     font-weight: 900;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+    header {
+        font-size: 1.2rem;
+    }
+    .container {
+        padding: 10px;
+    }
+    .btn {
+        font-size: medium;
+        padding: 10px;
+    }
+    footer {
+        padding: 30px;
+    }
+    .rodape__texto {
+        font-size: 1.5rem;
+    }
+}
