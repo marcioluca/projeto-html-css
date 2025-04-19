@@ -20,7 +20,7 @@ Este é um projeto simples desenvolvido com o objetivo de praticar e demonstrar 
 
 ## 📷 Prévia
 
-![Screenshot do projeto](./screenshot.png)
+![Screenshot do projeto](/IMG/Screenshot_1.png)
 
 ## 📁 Como utilizar localmente
 
